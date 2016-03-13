@@ -34,9 +34,15 @@
           $(".input").keyup(function(){
                 var price = +$(".price").val();
                 var shipping = +$(".shipping").val();
+                var total = price + shipping;
+                var eFee = total * .099;
+                var PPfee = (total * 0.026) + 0.3;
                 $("#price").val(price);
                 $("#shipping").val(shipping);
-                $("#total").val(shipping + price)
+                $("#total").val(total);
+                $("#eFee").val(eFee);
+                $("#PPfee").val(PPfee);
+                $("#totalFee").val(PPfee + eFee);
          });
       });
 
@@ -91,7 +97,7 @@
 
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="pull-right btn btn-primary">Reset</button>
+                  <button type="submit" onClick="$('#inputPrice').val('');'#inputShipping').val('')" class="pull-right btn btn-primary">Reset</button>
                 </div>
               </div>
             </form>
@@ -99,8 +105,6 @@
           </div>
         </div>
       </div>
-
-
       
         <div class="col-md-6 col-md-offset-3">
 
@@ -163,7 +167,10 @@
       <footer>
         <p>&copy; 2016</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    </div> 
+    <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
