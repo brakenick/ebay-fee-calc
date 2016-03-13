@@ -1,0 +1,39 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+.panel {
+	border: 1px solid #ddd;
+}
+
+.highlight {
+	background: #fafafa;
+	padding: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.highlight h2, .highlight h3 {
+	margin: 0;
+	padding: 15px;
+}
+
+.input-fields, .results {
+	padding: 10px;
+	margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
