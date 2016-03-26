@@ -4,17 +4,33 @@
    Author's custom styles
    ========================================================================== */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html {
+	background: url(background-pattern.gif) repeat;
+}
 
+body {
+	background: none;
+}
 
 .panel {
 	border: 1px solid #ddd;
+	background: #F9F9F9;
+}
+
+.jumbotron {
+	background-color: #7481A3;
+    color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .highlight {
-	background: #fafafa;
+	background: #333B60;
 	padding: 0;
+	color: #D6D6D6;
 	border-bottom: 1px solid #ddd;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .highlight h2, .highlight h3 {
@@ -25,7 +41,6 @@
 .input-fields, .results {
 	padding: 10px;
 	margin-top: 10px;
-
 }
 
 
