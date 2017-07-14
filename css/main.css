@@ -6,14 +6,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-html {
-	background: url(background-pattern.gif) repeat;
+html, body {
+	background: url(background-pattern.gif) repeat !important;
 }
 
 body {
 	background: none;
 }
 
+.container {
+	margin-top: 80px;
+}
 .panel {
 	border: 1px solid #ddd;
 	background: #F9F9F9;
@@ -28,7 +31,7 @@ body {
 .highlight {
 	background: #333B60;
 	padding: 0;
-	color: #D6D6D6;
+	color: #fff;
 	border-bottom: 1px solid #ddd;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -42,13 +45,3 @@ body {
 	padding: 10px;
 	margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
