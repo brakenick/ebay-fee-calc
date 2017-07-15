@@ -1,7 +1,12 @@
 
 version: 2
+
+test:
+  override:
+    - "true"
+
 deployment:
-  prod:
+  production:
     branch: master
     commands:
-      - aws s3 sync / s3://ebay-fee-calc/ --delete
+      - aws s3 sync $/ s3://ebay-fee-calc
