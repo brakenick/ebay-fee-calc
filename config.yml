@@ -1,6 +1,6 @@
 
 version: 2
-eployment:
+deployment:
   prod:
     branch: master
     commands:
