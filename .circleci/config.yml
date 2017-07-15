@@ -3,13 +3,9 @@ version: 2
 
 jobs:
   build:
-      working_directory: ~/
-      
-test:
-  bundle exec htmlproofer ./ --check-html --disable-external
-
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync ./ s3://ebay-fee-calc/
+    working_directory: ~/
+    steps:
+      - deploy
+      name: prod
+      command:
+        aws s3 sync ./ s3://ebay-fee-calc --delete
