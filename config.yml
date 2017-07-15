@@ -1,2 +1,7 @@
 
 version: 2
+eployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync / s3://ebay-fee-calc/ --delete
