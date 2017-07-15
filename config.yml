@@ -2,11 +2,10 @@
 version: 2
 
 test:
-  override:
-    - "true"
+  bundle exec htmlproofer ./ --check-html --disable-external
 
 deployment:
-  production:
+  prod:
     branch: master
     commands:
-      - aws s3 sync $/ s3://ebay-fee-calc
+      - aws s3 sync ./ s3://ebay-fee-calc/
