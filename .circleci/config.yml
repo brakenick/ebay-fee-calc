@@ -1,11 +1,5 @@
-
-version: 2
-
-jobs:
-  build:
-    working_directory: ~/
-    steps:
-      - deploy
-      name: prod
-      command:
-        aws s3 sync ./ s3://ebay-fee-calc --delete
+deployment:
+  staging:
+    branch: master
+    commands:
+          aws s3 sync ./ s3://ebay-fee-calc
