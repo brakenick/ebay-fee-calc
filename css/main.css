@@ -1,13 +1,9 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html, body {
-	background: url(background-pattern.gif) repeat !important;
+	background: url(Multicolor-light.png) repeat !important;
+	overflow-x: hidden;
 }
 
 body {
@@ -15,11 +11,22 @@ body {
 }
 
 .container {
-	margin-top: 80px;
+	margin-top: 60px;
 }
 .panel {
-	border: 1px solid #ddd;
-	background: #F9F9F9;
+	border: 4px solid #D8117D;
+	background: #fff;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	padding: 25px;
+	box-shadow: 20px 20px 0px 0px rgba(158, 3, 158, 0.39);
+
+	margin-bottom: 40px;
+}
+
+.result-panel {
+		box-shadow: 20px 20px 0px 0px rgba(3, 158, 158, 0.39);
+		border: 4px solid #abdbef;
 }
 
 .jumbotron {
@@ -28,6 +35,20 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.form-control, .input-group-addon {
+	border-radius: 0;
+}
+
+.form-control {
+	background: #fbfbfb !important;
+}
+
+.control-label {
+	padding-right: 0;
+	font-size: 13px;
+}
+/*
 .highlight {
 	background: #333B60;
 	padding: 0;
@@ -36,12 +57,25 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+*/
+
+.btn-primary {
+	background: #1028b1;
+	padding: 10px 20px;
+}
+
 .highlight h2, .highlight h3 {
 	margin: 0;
 	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .input-fields, .results {
 	padding: 10px;
 	margin-top: 10px;
+}
+
+footer {
+	position: absolute;;
+	bottom: 0;
 }
